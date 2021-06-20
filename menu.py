@@ -23,6 +23,7 @@ def main():
         print(colored("В разработке!",'red'))
     elif cmd == "3":
         print(colored("В активной разработке!",'red'))
+        from menu import menu
     elif cmd == "4":
         sys.exit()
     else:
