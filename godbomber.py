@@ -8,9 +8,9 @@ import argparse
 import random
 from threading import Thread
 import random
-from termcolor import colored
 import requests
-import termcolor
+from termcolor import colored
+
 
 def slowprint(s):
     for c in s + '\n' :
