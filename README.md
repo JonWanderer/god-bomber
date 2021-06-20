@@ -7,7 +7,10 @@
 pkg update
 ```
 ```
-pkg install python3 python-pip git -y
+pkg install python
+```
+```
+pkg install git
 ```
 ```
 git clone https://github.com/lkqas/god-bomber.git
