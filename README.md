@@ -1,9 +1,7 @@
 # God bomber💣
-**Мощный бомбер на питоне.**
+**a simple bomber on python**
 
-**a strong bomber on python**
-
-# Install🔫
+# Installation🔫
 **termux**
 ```
 pkg update
@@ -29,12 +27,12 @@ pip install requests
 ```
 python godbomber.py
 ```
-# Будущие обновления.
-**Будет добавлено меню.**
+# info
+_[telegram](https://t.me/Ravvs_Archive)_
 
-**Будет добавлен английский язык в меню.**
+donate - **qiwi  4890 4947 3146 2099**
 
-**Будет обновлен сам бомбер.**
+_[my telegram acc](https://t.me/lkqas)_
 
 # License
 This project is licensed under the [GNU General Public License v3.0](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
