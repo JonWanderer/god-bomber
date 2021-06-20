@@ -1,9 +1,7 @@
 import os
 import time
 import sys
-from colorama import Style, Back, Fore
 from termcolor import colored
-
 
 def main():
     os.system("cls")
@@ -28,7 +26,7 @@ def main():
     elif cmd == "4":
         sys.exit()
     else:
-        print(f"{Fore.RED}что то пошло не так...{Style.RESET_ALL}")
+        print(colored("что то пошло не так...",'red'))
         time.sleep(3)
         main()
 main()
