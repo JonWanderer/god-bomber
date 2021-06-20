@@ -35,8 +35,8 @@ def slowprint(s):
         sys.stdout.flush()
         time.sleep(5. / 100)
 
-phone = input(colored('Enter your phone number>>: ','red'))
-countT = input(colored('Enter threading>>: ','green'))
+phone = input(colored('введите номер телефона: ','red'))
+countT = input(colored('введите кол-во спама: ','green'))
 
 
 iteration = 0
