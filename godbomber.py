@@ -34,10 +34,10 @@ def slowprint(s):
         sys.stdout.flush()
         time.sleep(5. / 100)
 
-_phone = input(''' \033[41m Привет, введи номер без + (79xxxxxxxxx)-->> ''')
 
+_phone = input('Hello! Enter number for attack (79xxxxxxxxx)-->> ')
 
-if _phone[0] == '+':
+if  _phone[0] == '+':
 	_phone = _phone[1:]
 if _phone[0] == '8':
 	_phone = '7'+_phone[1:]
