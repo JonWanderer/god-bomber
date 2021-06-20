@@ -2,7 +2,6 @@ import os
 import time
 import sys
 from termcolor import colored
-from subprocess import Popen
 
 def main():
     os.system("cls")
@@ -23,7 +22,7 @@ def main():
     elif cmd == "2":
         print(colored("В разработке!",'red'))
     elif cmd == "3":
-        from godbomber import update
+        print(colored("В активной разработке!",'red'))
     elif cmd == "4":
         sys.exit()
     else:
