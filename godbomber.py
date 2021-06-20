@@ -11,6 +11,11 @@ import random
 import requests
 from termcolor import colored
 
+from subprocess import call
+call(["menu.py"])
+
+os.system("clear")
+os.system("cls")
 
 def slowprint(s):
     for c in s + '\n' :
