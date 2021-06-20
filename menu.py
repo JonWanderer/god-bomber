@@ -23,7 +23,7 @@ def main():
     elif cmd == "2":
         print(colored("В разработке!",'red'))
     elif cmd == "3":
-        from godbomber import Update
+        from godbomber import update
     elif cmd == "4":
         sys.exit()
     else:
