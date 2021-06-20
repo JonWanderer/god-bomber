@@ -31,7 +31,7 @@ by @lkqas
 version 0.5
 ''','blue'))
 
-phone = input(colored('введите номер телефона +: ','red'))
+_phone = input(colored('введите номер телефона > +(79xxxxxxxx) ','red'))
 countT = input(colored('введите кол-во спама: ','green'))
 
 iteration = 0
@@ -45,7 +45,7 @@ for x in range(12):
 def infinity():
 	while True:
 		request_timeout = 0.00002
-		_phone = phone
+		_phone = _phone
 		_phone9 = _phone[1:]
 		_phoneAresBank = '+'+_phone[0]+'('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11] 
 		_phone9dostavista = _phone9[:3]+'+'+_phone9[3:6]+'-'+_phone9[6:8]+'-'+_phone9[8:10] 
