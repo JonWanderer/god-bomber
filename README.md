@@ -1,6 +1,13 @@
 # God bomber💣
 **a simple bomber on python**
 
+# Updates❤
+**UPDATE 0.5**
+
+_[+]fixed bugs._
+
+_[+]Added menu._
+
 # Installation🔫
 **termux**
 ```
@@ -19,10 +26,7 @@ git clone https://github.com/lkqas/god-bomber.git
 cd god-bomber/
 ```
 ```
-pip install termcolor
-```
-```
-pip install requests
+pip install -r requirements.txt
 ```
 ```
 python menu.py
