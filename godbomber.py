@@ -1,18 +1,15 @@
 
 import threading
 import time
-import datetime
+import datetime	
 import time
 import sys
 import os
 import argparse
 import random
 from threading import Thread
-import random
 import requests
 from termcolor import colored
-
-os.system('menu.py')
 
 os.system("clear")
 os.system("cls")
@@ -31,7 +28,7 @@ slowprint(colored('''
 ┃┗┻━┃┗━┛┣┛┗┛┃┗━┛┃┗━┛┃┃┃┃┃┃┗━┛┃┗━━┫┃┃┗┓
 ┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 by @lkqas
-beta version 4.0
+version 0.5
 ''','blue'))
 
 phone = input(colored('введите номер телефона +: ','red'))
