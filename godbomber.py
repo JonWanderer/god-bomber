@@ -1,3 +1,4 @@
+
 import threading
 import time
 import datetime
@@ -11,8 +12,7 @@ import random
 import requests
 from termcolor import colored
 
-from subprocess import call
-call(["menu.py"])
+os.system('menu.py')
 
 os.system("clear")
 os.system("cls")
