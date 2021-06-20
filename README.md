@@ -19,7 +19,10 @@ git clone https://github.com/lkqas/god-bomber.git
 cd god-bomber/
 ```
 ```
-pip3 install -r requirements.txt
+pip install termcolor
+```
+```
+pip install requests
 ```
 ```
 python godbomber.py
