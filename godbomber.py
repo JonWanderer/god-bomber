@@ -30,7 +30,7 @@ slowprint(colored('''
 ┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 by @lkqas
 version 0.7
-''','GREEN'))
+''','green'))
 
 phone = input(colored('Введите номер телефона с +>>: ','red'))
 countT = input(colored('Введите кол-во спама>>: ','red'))
