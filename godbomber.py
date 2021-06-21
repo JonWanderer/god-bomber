@@ -11,6 +11,7 @@ from threading import Thread
 import requests
 from termcolor import colored
 
+
 os.system("clear")
 os.system("cls")
 
@@ -29,10 +30,11 @@ slowprint(colored('''
 ┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 by @lkqas
 version 0.6
-''','blue'))
+''','magenta'))
 
-_phone = input(colored('введите номер телефона > +(79xxxxxxxx) ','red'))
-countT = input(colored('введите кол-во спама: ','green'))
+phone = input(colored('Введите номер телефона с +>>: ','red'))
+countT = input(colored('Введите кол-во спама>>: ','red'))
+
 
 iteration = 0
 _name = ''
