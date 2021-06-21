@@ -16,7 +16,7 @@ git clone https://github.com/lkqas/god-bomber.git
 cd god-bomber/
 ```
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ```
 python godbomber.py
