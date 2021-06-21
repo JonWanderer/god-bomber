@@ -11,18 +11,18 @@ def main():
 Выберите пункт:
 1.sms-bomb
 2.call-bomb
-3.обновление.
+3.update.
 4.exit/quit
 ''','red'))
 
     cmd = input("# > ")
 
     if cmd == "1":
-        from godbomber import godbomber
+        from menu import godbomber
     elif cmd == "2":
-        print(colored("В разработке!",'red'))
+        import callbomb
     elif cmd == "3":
-         from menu import update
+        from menu import update
     elif cmd == "4":
         sys.exit()
     else:
