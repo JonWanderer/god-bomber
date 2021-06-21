@@ -28,7 +28,7 @@ slowprint(colored('''
 ┃┗┻━┃┗━┛┣┛┗┛┃┗━┛┃┗━┛┃┃┃┃┃┃┗━┛┃┗━━┫┃┃┗┓
 ┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 by @lkqas
-version 0.5
+version 0.6
 ''','blue'))
 
 _phone = input(colored('введите номер телефона > +(79xxxxxxxx) ','red'))
