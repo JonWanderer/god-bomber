@@ -20,7 +20,7 @@ def main():
     if cmd == "1":
          import godbomber
     elif cmd == "2":
-        import callbomb
+        print(colored("в разработке.",'red'))
     elif cmd == "3":
         print(colored("в разработке.",'red'))
     elif cmd == "4":
