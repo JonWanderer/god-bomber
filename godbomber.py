@@ -33,8 +33,6 @@ version 0.7
 ''','green'))
 
 phone = input(colored('Введите номер телефона с +>>: ','red'))
-countT = input(colored('Введите кол-во спама>>: ','red'))
-
 
 iteration = 0
 _name = ''
@@ -483,6 +481,3 @@ def infinity():
 			print('[+] NovaLinia отправлено!')
 		except:
 			print('[-] NovaLinia Не отправлено!')
-
-countT = Thread(target=infinity)
-countT.start()
