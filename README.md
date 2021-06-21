@@ -39,7 +39,7 @@ python menu.py
 ```
 **Uninstall**
 ```
-Rm -rf god-bomber
+rm -rf god-bomber
 ```
 
 # info
