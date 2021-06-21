@@ -1,5 +1,6 @@
 # God bomber💣
 **Мощный бомбер на питоне.**
+
 **a strong bomber on python**
 
 # Install🔫
