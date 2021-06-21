@@ -18,11 +18,11 @@ def main():
     cmd = input("# > ")
 
     if cmd == "1":
-        from menu import godbomber
+         import godbomber
     elif cmd == "2":
         import callbomb
     elif cmd == "3":
-        from menu import update
+        print(colored("в разработке.",'red'))
     elif cmd == "4":
         sys.exit()
     else:
