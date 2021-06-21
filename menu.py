@@ -4,7 +4,6 @@ import sys
 from termcolor import colored
 
 def main():
-    os.system("cls")
     os.system("clear")
     print(colored('''
        
