@@ -8,6 +8,12 @@ _。fixed bugs._
 
 _。Added menu._
 
+**UPDATE 0.6**
+
+_。Added requirements.txt_
+
+_。Fixed many bugs_
+
 # Installation🔫
 **termux**
 ```
@@ -32,8 +38,9 @@ pip install -r requirements.txt
 python menu.py
 ```
 **Uninstall**
-
+```
 Rm -rf god-bomber
+```
 
 # info
 _[telegram](https://t.me/Ravvs_Archive)_
