@@ -18,7 +18,7 @@ randompassword = transliterate.translit(random.choice(names), reversed=True) + t
 randomtimezone = int(random.random() * 10)
 randomzaim = int((random.random() * 10) + 10)
 randomid6 = str(random.randint(1, 9)) + str(random.randint(1, 9)) + str(random.randint(1, 9)) + str(random.randint(1, 9)) + str(random.randint(1, 9))
-problem = 'Здравствуйте, у меня есть проблема'
+problem = '1'
 
 def call():
     phoneNum = input('Номер телефона: ')
