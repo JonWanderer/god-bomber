@@ -1,6 +1,7 @@
 # God bomber💣
 **modern bomber on python.**
 # Install
+**termux**
 ```
 pkg update
 ```
