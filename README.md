@@ -29,9 +29,6 @@ cd god-bomber/
 pip install -r requirements.txt
 ```
 ```
-
-```
-```
 python menu.py
 ```
 **Uninstall**
