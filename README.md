@@ -27,6 +27,9 @@ pip install requests
 ```
 python menu.py
 ```
+**Uninstall**
+Rm -rf god-bomber
+
 # info
 _[telegram](https://t.me/Ravvs_Archive)_
 
