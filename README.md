@@ -25,7 +25,7 @@ pip install termcolor
 pip install requests
 ```
 ```
-python godbomber.py
+python menu.py
 ```
 # info
 _[telegram](https://t.me/Ravvs_Archive)_
