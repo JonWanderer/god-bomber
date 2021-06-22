@@ -26,10 +26,10 @@ git clone https://github.com/lkqas/god-bomber.git
 cd god-bomber/
 ```
 ```
-pip install termcolor
+pip install -r requirements.txt
 ```
 ```
-pip install requests
+
 ```
 ```
 python menu.py
