@@ -1,6 +1,12 @@
 # God bomber💣
 **a simple bomber on python**
 
+# Updates❤
+**UPDATE 0.5**
+_[+]fixed bugs.
+
+_[+]Added menu.
+
 # Installation🔫
 **termux**
 ```
