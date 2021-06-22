@@ -28,6 +28,7 @@ pip install requests
 python menu.py
 ```
 **Uninstall**
+
 Rm -rf god-bomber
 
 # info
