@@ -9,6 +9,7 @@ _。fixed bugs._
 _。Added menu._
 
 **UPDATE 0.6**
+
 _。Added requirements.txt_
 
 _。Fixed many bugs_
