@@ -4,9 +4,9 @@
 # Updates❤
 **UPDATE 0.5**
 
-_[+]fixed bugs._
+_。fixed bugs._
 
-_[+]Added menu._
+_。Added menu._
 
 # Installation🔫
 **termux**
