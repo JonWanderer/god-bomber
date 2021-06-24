@@ -1,7 +1,7 @@
 import os, time, sys, sms, call, update
 from termcolor import colored
 
-showMenu = true
+showMenu = True
 while showMenu:
     os.system("clear")
     print(colored('''
@@ -16,10 +16,10 @@ while showMenu:
     cmd = input("# > ")
 
     if cmd == "1":
-        showMenu = false
+        showMenu = False
         sms.spam()
     elif cmd == "2":
-        showMenu = false
+        showMenu = False
         call.spam()
     elif cmd == "3":
         update.up()
