@@ -1,9 +1,8 @@
-import os
-import time
-import sys
+import os, time, sys, sms, call, update
 from termcolor import colored
 
-def main():
+showMenu = true
+while showMenu:
     os.system("clear")
     print(colored('''
        
@@ -17,15 +16,15 @@ def main():
     cmd = input("# > ")
 
     if cmd == "1":
-         import godbomber
+        showMenu = false
+        sms.spam()
     elif cmd == "2":
-        print(colored("в разработке.",'red'))
+        showMenu = false
+        call.spam()
     elif cmd == "3":
-        print(colored("в разработке.",'red'))
+        update.up()
     elif cmd == "4":
         sys.exit()
     else:
         print(colored("что то пошло не так...",'red'))
         time.sleep(3)
-        main()
-main()
