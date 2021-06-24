@@ -35,7 +35,7 @@ pkg install python
 pip install -r requirements.txt
 ```
 ```
-git clone 
+git clone https://github.com/lkqas/god-bomber.git
 ```
 ```
 cd god-bomber
