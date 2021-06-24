@@ -25,6 +25,11 @@ _。Refactored some code_
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
+**also u can type**
+```
+python godbomber.py
+```
+
 **Uninstall**
 ```
 rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
