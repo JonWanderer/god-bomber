@@ -1,2 +1,3 @@
+from termcolor import colored
 def spam():
-  print("В разработке!")
+    print(colored("В разработке!",'red'))
