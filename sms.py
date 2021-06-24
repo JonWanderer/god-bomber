@@ -18,8 +18,8 @@ def spam():
 	┃┗┻━┃┗━┛┣┛┗┛┃┗━┛┃┗━┛┃┃┃┃┃┃┗━┛┃┗━━┫┃┃┗┓
 	┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 	by @lkqas
-	version 0.7
-	''','green'))
+	version 0.8
+	''','yellow'))
 
 	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
 
