@@ -21,11 +21,10 @@ _。Simplified the installation_
 _。Refactored some code_
 
 # Installation🔫
-**termux**
+**termux installation**
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
-**also u can type**
 ```
 python godbomber.py
 ```
