@@ -23,7 +23,19 @@ _。Refactored some code_
 # Installation🔫
 **termux installation**
 ```
-curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
+pkg update
+```
+```
+pkg install git
+```
+```
+pkg install python 
+```
+```
+pip install -r requirements.txt
+```
+```
+git clone 
 ```
 ```
 cd god-bomber
@@ -31,6 +43,7 @@ cd god-bomber
 ```
 python godbomber.py
 ```
+
 
 **Uninstall**
 ```
