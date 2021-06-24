@@ -26,6 +26,9 @@ _。Refactored some code_
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
 ```
+cd god-bomber
+```
+```
 python godbomber.py
 ```
 
