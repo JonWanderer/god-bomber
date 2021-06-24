@@ -1,5 +1,5 @@
 # God bomber💣
-**a simple bomber on python**
+**a simple bomber in python**
 
 # Updates❤
 **UPDATE 0.5**
@@ -14,32 +14,19 @@ _。Added requirements.txt_
 
 _。Fixed many bugs_
 
+**UPDATE 0.7**
+
+_。Simplified the installation_
+_。Refactored some code_
+
 # Installation🔫
 **termux**
 ```
-pkg update
-```
-```
-pkg install python
-```
-```
-pkg install git
-```
-```
-git clone https://github.com/lkqas/god-bomber.git
-```
-```
-cd god-bomber/
-```
-```
-pip install -r requirements.txt
-```
-```
-python menu.py
+curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
 **Uninstall**
 ```
-rm -rf god-bomber
+rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 ```
 
 # info
