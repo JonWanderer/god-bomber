@@ -33,7 +33,7 @@ rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 # info
 _[telegram](https://t.me/Ravvs_Archive)_
 
-[donate](https://qiwi.com/payment/form/31873) **4890 4947 3146 2099**
+[donate](https://qiwi.com/payment/form/31873)   **4890 4947 3146 2099**
 
 _[my telegram acc](https://t.me/lkqas)_
 
