@@ -17,6 +17,7 @@ _。Fixed many bugs_
 **UPDATE 0.7**
 
 _。Simplified the installation_
+
 _。Refactored some code_
 
 # Installation🔫
