@@ -24,8 +24,6 @@ _。Refactored some code_
 
 _。Fixed bugs_
 
-_。Returns a basic install_
-
 # Installation🔫
 **termux**
 ```
