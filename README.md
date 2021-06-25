@@ -52,4 +52,4 @@ _[telegram](https://t.me/Ravvs_Archive)_
 _[my telegram acc](https://t.me/lkqas)_
 
 ># License
-This project is licensed under the [GNU General Public License v3.0](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
+>This project is licensed under the [GNU General Public License v3.0](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
