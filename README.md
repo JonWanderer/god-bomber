@@ -2,27 +2,27 @@
 **a simple bomber in python**
 
 # Updates❤
-**UPDATE 0.5**
+**。UPDATE 0.5**
 
-_。fixed bugs._
+_ ● fixed bugs._
 
-_。Added menu._
+_ ● Added menu._
 
-**UPDATE 0.6**
+**。UPDATE 0.6**
 
-_。Added requirements.txt_
+_ ● Added requirements.txt_
 
-_。Fixed many bugs_
+_● Fixed many bugs_
 
-**UPDATE 0.7**
+**。UPDATE 0.7**
 
-_。Simplified the installation_
+_● Simplified the installation_
 
-_。Refactored some code_
+_● Refactored some code_
 
-**UPDATE 0.8**
+**。UPDATE 0.8**
 
-_。Fixed bugs_
+_● Fixed bugs_
 
 # Installation(установка)🔫
 **termux**
