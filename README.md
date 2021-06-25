@@ -1,39 +1,47 @@
 # God bomber💣
-**a simple bomber in python**
+<h1 align="center">
+  <br>
+  <a href="https://github.com/lkqas/god-bomber.git">
+  <img src="https://img.icons8.com/emoji/452/bomb-emoji.png"
+  alt="lkqas">
+  </a><br>
+  **Godbomber v 0.8**
+  <br>
+</h1>
 
 # Updates❤
-**。UPDATE 0.5**
+**UPDATE 0.5**
 
-● fixed bugs
+_。fixed bugs._
 
-● Added menu
+_。Added menu._
 
-**。UPDATE 0.6**
+**UPDATE 0.6**
 
-● Added requirements.txt
+_。Added requirements.txt_
 
-● Fixed many bugs
+_。Fixed many bugs_
 
-**。UPDATE 0.7**
+**UPDATE 0.7**
 
-● Simplified the installation
+_。Simplified the installation_
 
-● Refactored some code
+_。Refactored some code_
 
-**。UPDATE 0.8**
+**UPDATE 0.8**
 
-● Fixed bugs
+_。Fixed bugs_
 
-# Installation (установка)🔫
+# Installation(установка)🔫
 **termux**
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
-**Restart termux (перезапустите termux)**
+**Restart termux(перезапустите termux)**
 ```
 godbomber
 ```
-**Uninstall (удаление)**
+**Uninstall(удаление)**
 ```
 rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 ```
