@@ -1,7 +1,14 @@
 # God bomber💣
-**a simple bomber in python**
+<h1 align="bottom">
+  <br>
+  <a href="https://github.com/lkqas/god-bomber.git">
+  <img src="https://img.icons8.com/emoji/452/bomb-emoji.png"
+  alt="lkqas">
+  </a><br>
+  <br>
+</h1>
 
-# Updates❤
+># Updates❤
 **UPDATE 0.5**
 
 _。fixed bugs._
@@ -24,7 +31,7 @@ _。Refactored some code_
 
 _。Fixed bugs_
 
-# Installation(установка)🔫
+># Installation(установка)🔫
 **termux**
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
@@ -37,12 +44,12 @@ godbomber
 ```
 rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 ```
-# info
+># info
 _[telegram](https://t.me/Ravvs_Archive)_
 
 [donate](https://qiwi.com/payment/form/31873) **4890 4947 3146 2099**
 
 _[my telegram acc](https://t.me/lkqas)_
 
-# License
-This project is licensed under the [GNU General Public License v3.0](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
+># License
+>This project is licensed under the [GNU General Public License v3.0](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
