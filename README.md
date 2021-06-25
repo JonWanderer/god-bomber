@@ -24,13 +24,17 @@ _。Refactored some code_
 
 _。Fixed bugs_
 
-# Installation🔫
+# Installation(установка)🔫
 **termux**
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
 ```
 godbomber
+```
+**Uninstall(удаление)**
+```
+rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 ```
 # info
 _[telegram](https://t.me/Ravvs_Archive)_
