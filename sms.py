@@ -39,6 +39,7 @@ def phone_check(phone):
 		sys.exit()
 	
 def spam():
+	os.system("clear")
 	net_check()
 	proxy()
 
