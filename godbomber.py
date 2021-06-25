@@ -1,4 +1,4 @@
-import os, time, sys, sms, call, update
+import os, time, sys,sms, call, update
 from termcolor import colored
 
 showMenu = True
@@ -11,7 +11,7 @@ while showMenu:
 2.call-bomb
 3.update.
 4.exit/quit
-''','red'))
+''','green'))
 
     cmd = input("# > ")
 
