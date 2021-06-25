@@ -35,25 +35,11 @@ def generate_proxy():
 def phone_check(phone):
 	pat = re.compile(r"(\+?7|8|)9\d{9}")
 	if not re.fullmatch(pat, phone):
-		print("\nНеверный номер телефона!")
+		print(colored("\nНеверный номер телефона!",'green'))
 		sys.exit()
-
-
 	
 def spam():
 	net_check()
-	
-	slowprint(colored('''
-	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
-	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
-	┃┃╋┗┫┃╋┃┃┃┃┃┃┗┛┗┫┃╋┃┃┏┓┏┓┃┗┛┗┫┗━━┫┗━┛┃
-	┃┃┏━┫┃╋┃┃┃┃┃┃┏━┓┃┃╋┃┃┃┃┃┃┃┏━┓┃┏━━┫┏┓┏┛
-	┃┗┻━┃┗━┛┣┛┗┛┃┗━┛┃┗━┛┃┃┃┃┃┃┗━┛┃┗━━┫┃┃┗┓
-	┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
-	by @lkqas
-	version 0.9
-	''','yellow'))
-
 	proxy()
 
 	_phone = input(colored("Введите номер для атаки (79xxxxxxxxx)-->>" ,'green'))
