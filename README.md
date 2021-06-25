@@ -4,25 +4,25 @@
 # Updates❤
 **。UPDATE 0.5**
 
-_ ● fixed bugs._
+● fixed bugs
 
-_ ● Added menu._
+● Added menu
 
 **。UPDATE 0.6**
 
-_ ● Added requirements.txt_
+● Added requirements.txt
 
 _ ● Fixed many bugs_
 
 **。UPDATE 0.7**
 
-_ ● Simplified the installation_
+● Simplified the installation
 
-_ ● Refactored some code_
+● Refactored some code
 
 **。UPDATE 0.8**
 
-_ ● Fixed bugs_
+● Fixed bugs
 
 # Installation(установка)🔫
 **termux**
