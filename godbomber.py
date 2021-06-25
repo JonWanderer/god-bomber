@@ -22,6 +22,7 @@ while showMenu:
         showMenu = False
         call.spam()
     elif cmd == "3":
+        showMenu = False
         update.up()
     elif cmd == "4":
         sys.exit()
