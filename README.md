@@ -29,6 +29,7 @@ _。Fixed bugs_
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
+**Restart termux(перезапустите termux)**
 ```
 godbomber
 ```
