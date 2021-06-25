@@ -21,39 +21,17 @@ _。Simplified the installation_
 _。Refactored some code_
 
 # Installation🔫
-**termux installation**
+**termux**
 ```
-pkg update
-```
-```
-pkg install git
+curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
 ```
-pkg install python 
+godbomber
 ```
-```
-pip install -r requirements.txt
-```
-```
-git clone https://github.com/lkqas/god-bomber.git
-```
-```
-cd god-bomber
-```
-```
-python godbomber.py
-```
-
-
-**Uninstall**
-```
-rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
-```
-
 # info
 _[telegram](https://t.me/Ravvs_Archive)_
 
-[donate](https://qiwi.com/payment/form/31873)   **4890 4947 3146 2099**
+[donate](https://qiwi.com/payment/form/31873) **4890 4947 3146 2099**
 
 _[my telegram acc](https://t.me/lkqas)_
 
