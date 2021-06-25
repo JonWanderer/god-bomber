@@ -5,7 +5,7 @@
   <img src="https://img.icons8.com/emoji/452/bomb-emoji.png"
   alt="lkqas">
   </a><br>
-  **Godbomber v 0.8**
+  Godbomber v 0.8
   <br>
 </h1>
 
