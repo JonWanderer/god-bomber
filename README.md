@@ -1,5 +1,5 @@
 # God bomber💣
-<h1 align="center">
+<h1 align="bottom">
   <br>
   <a href="https://github.com/lkqas/god-bomber.git">
   <img src="https://img.icons8.com/emoji/452/bomb-emoji.png"
