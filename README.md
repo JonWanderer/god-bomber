@@ -19,7 +19,7 @@ _。Added menu._
 
 _。Added requirements.txt_
 
-_。Fixed many bugs_
+>_。Fixed many bugs_
 
 **UPDATE 0.7**
 
@@ -36,11 +36,11 @@ _。Fixed bugs_
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
 ```
->**Restart termux(перезапустите termux)**
+**Restart termux(перезапустите termux)**
 ```
 godbomber
 ```
->**Uninstall(удаление)**
+**Uninstall(удаление)**
 ```
 rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 ```
