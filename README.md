@@ -19,7 +19,7 @@ _。Added menu._
 
 _。Added requirements.txt_
 
->_。Fixed many bugs_
+_。Fixed many bugs_
 
 **UPDATE 0.7**
 
