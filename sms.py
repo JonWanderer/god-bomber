@@ -1,4 +1,5 @@
-# flexagoon, спасибо что с моего гавно кода сделал соску)
+# flexagoon, спасибо за рефакторинг) by lkqas
+# кто спиздит код - тот пидор) By lkqas
 import time, os, random, requests, sys, re
 from termcolor import colored
 from requests import get
@@ -16,8 +17,8 @@ def net_check():
     try:
         requests.get('https://www.google.com', verify=True)
     except:
-        print("\n\n\tзамечен плохой интернет....")
-        print('\t\tВозобновите интернет, и перезайдите в бомбер...\n\n')
+        print(colored("Замечен плохой интернет....",'red'))
+        print(colored('Возобновите интернет, и перезайдите в бомбер...','red'))
         sys.exit()
 
 def proxy():
