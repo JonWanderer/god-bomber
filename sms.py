@@ -1,5 +1,9 @@
+# flexagoon, спасибо что с моего гавно кода сделал соску)
 import time, os, random, requests, sys, re
 from termcolor import colored
+from requests import get
+import random
+from random import choice
 
 os.system("clear")
 
@@ -15,12 +19,26 @@ def net_check():
         print("\n\n\tзамечен плохой интернет....")
         print('\t\tВозобновите интернет, и перезайдите в бомбер...\n\n')
         sys.exit()
+
+def proxy():
+    print("Использовать прокси? (y/n)")
+    proxy = input(" >> ")
+    if proxy.lower() == "y":
+        proxies = generate_proxy()
+    else:
+        proxies = None
+
+def generate_proxy():
+    proxy = get("https://gimmeproxy.com/api/getProxy?curl=true&protocol=http&supportsHttps=true").text
+    return {"http": proxy, "https": proxy}
 	
 def phone_check(phone):
 	pat = re.compile(r"(\+?7|8|)9\d{9}")
 	if not re.fullmatch(pat, phone):
 		print("\nНеверный номер телефона!")
 		sys.exit()
+
+
 	
 def spam():
 	net_check()
@@ -36,7 +54,9 @@ def spam():
 	version 0.8
 	''','yellow'))
 
-	_phone = input(colored("Enter number for attack (79xxxxxxxxx)-->>" ,'green'))
+	proxy()
+
+	_phone = input(colored("Введите номер для атаки (79xxxxxxxxx)-->>" ,'green'))
 
 	phone_check(_phone)
 	
