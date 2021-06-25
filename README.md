@@ -20,6 +20,12 @@ _。Simplified the installation_
 
 _。Refactored some code_
 
+**UPDATE 0.8**
+
+_。Fixed bugs_
+
+_。Returns a basic install_
+
 # Installation🔫
 **termux**
 ```
