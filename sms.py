@@ -12,8 +12,8 @@ def net_check():
     try:
         requests.get('https://www.google.com', verify=True)
     except:
-        print("\n\n\tпохоже что у вас плохой интернет, либо вы используете прокси....")
-        print('\t\tВозобновите интернет и перезайдите в бомбер...\n\n')
+        print("\n\n\tзамечен плохой интернет....")
+        print('\t\tВозобновите интернет, и перезайдите в бомбер...\n\n')
         sys.exit()
 	
 def spam():
@@ -30,7 +30,7 @@ def spam():
 	version 0.8
 	''','yellow'))
 
-	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
+	_phone = input(colored("Enter number for attack (79xxxxxxxxx)-->>" ,'green'))
 
 	if _phone[0] == '+':
 		_phone = _phone[1:]
