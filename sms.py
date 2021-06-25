@@ -21,7 +21,7 @@ def net_check():
         sys.exit()
 
 def proxy():
-    print("Использовать прокси? (y/n)")
+    print(colored("Использовать прокси? (y/n)",'green'))
     proxy = input(" >> ")
     if proxy.lower() == "y":
         proxies = generate_proxy()
