@@ -70,7 +70,7 @@ def spam():
 		except:
 			print('[-] Grab не отправлено!')
 
-		try:
+	    try:
 			requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
 			print('[+] RuTaxi отправлено!')
 		except:
