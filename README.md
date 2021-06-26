@@ -27,13 +27,13 @@
 
 **UPDATE 0.9**
 
-+_Added proxy_
++ _Added proxy_
 
-+_Added phone cheak_
++ _Added phone cheak_
 
-+_Refactored some code_
++ _Refactored some code_
 
-+_Fixed micro bugs with proxy_
++ _Fixed micro bugs with proxy_
 
 # Termux installation (Установка в Termux)🔫
 ```
