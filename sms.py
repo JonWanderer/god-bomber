@@ -2,7 +2,6 @@ import time, os, random, requests, sys
 from termcolor import colored
 
 os.system("clear")
-os.system("cls")
 
 def slowprint(s):
     for c in s + '\n' :
