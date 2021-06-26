@@ -12,8 +12,8 @@ def net_check():
     try:
         requests.get('https://www.google.com', verify=True)
     except:
-        print("\n\n\tпохоже что у вас плохой интернет, либо вы используете прокси....")
-        print('\t\tВозобновите интернет и перезайдите в бомбер...\n\n')
+        print("\nпохоже что у вас плохой интернет, либо вы используете прокси....")
+        print('Возобновите интернет и перезайдите в бомбер...\n')
         sys.exit()
 	
 def phone_check(phone):
