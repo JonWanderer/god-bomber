@@ -1,4 +1,4 @@
-import time, os, random, requests
+import time, os, random, requests, sys
 from termcolor import colored
 
 os.system("clear")
@@ -9,7 +9,17 @@ def slowprint(s):
         print(c, end="")
         time.sleep(1. / 100)
 
+def net_check():
+    try:
+        requests.get('1.1.1.1', verify=True)
+    except:
+        print("\n\n\tпохоже что у вас плохой интернет, либо вы используете прокси....")
+        print('\t\tВозобновите интернет и перезайдите в бомбер...\n\n')
+        sys.exit()
+	
 def spam():
+	net_check()
+	
 	slowprint(colored('''
 	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
 	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
