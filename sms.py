@@ -18,7 +18,7 @@ def net_check():
 	
 def phone_check(phone):
 	pat = re.compile(r"(\+?7|8|)9\d{9}")
-	if !(re.fullmatch(pat, phone)):
+	if not re.fullmatch(pat, phone):
 		print("\nНеверный номер телефона!")
 		sys.exit()
 	
