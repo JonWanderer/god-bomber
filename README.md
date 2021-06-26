@@ -1,55 +1,48 @@
 # God bomber💣
-<h1 align="bottom">
-  <br>
-  <a href="https://github.com/lkqas/god-bomber.git">
-  <img src="https://img.icons8.com/emoji/452/bomb-emoji.png"
-  alt="lkqas">
-  </a><br>
-  <br>
-</h1>
+[![lkqas](https://img.icons8.com/emoji/452/bomb-emoji.png)](https://github.com/lkqas/god-bomber)
 
-># Updates❤
+# Updates❤
 **UPDATE 0.5**
 
-_。fixed bugs._
++ _fixed bugs._
 
-_。Added menu._
++ _Added menu._
 
 **UPDATE 0.6**
 
-_。Added requirements.txt_
++ _Added requirements.txt_
 
-_。Fixed many bugs_
++ _Fixed many bugs_
 
 **UPDATE 0.7**
 
-_。Simplified the installation_
++ _Simplified the installation_
 
-_。Refactored some code_
++ _Refactored some code_
 
 **UPDATE 0.8**
 
-_。Fixed bugs_
++ _Fixed bugs_
 
-># Installation(установка)🔫
-**termux**
+# Termux installation (Установка в Termux)🔫
 ```
-curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh
+curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh && exec bash
 ```
-**Restart termux(перезапустите termux)**
+# Running (Запуск)
 ```
 godbomber
 ```
-**Uninstall(удаление)**
+# Uninstallation (удаление)
 ```
 rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
 ```
-># info
-_[telegram](https://t.me/Ravvs_Archive)_
 
-[donate](https://qiwi.com/payment/form/31873) **4890 4947 3146 2099**
+# Info
+[Telegram channel](https://t.me/Ravvs_Archive)
 
-_[my telegram acc](https://t.me/lkqas)_
+[Donate](https://qiwi.com/payment/form/31873) **4890 4947 3146 2099**
+
+[My Telegram account](https://t.me/lkqas)
 
 ># License
->This project is licensed under the [GNU General Public License v3.0](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
+>This project is licensed under the [GNU GPL Version 3 and up](https://github.com/lkqas/god-bomber/blob/master/LICENSE)
