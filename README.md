@@ -24,6 +24,17 @@
 
 + _Fixed bugs_
 
+
+**UPDATE 0.9**
+
++_Added proxy_
+
++_Added phone cheak_
+
++_Refactored some code_
+
++_Fixed micro bugs with proxy_
+
 # Termux installation (Установка в Termux)🔫
 ```
 curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh && exec bash
