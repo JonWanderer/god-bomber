@@ -1,15 +1,24 @@
-import time, os, random, requests
+import time, os, random, requests, sys
 from termcolor import colored
 
 os.system("clear")
-os.system("cls")
 
 def slowprint(s):
     for c in s + '\n' :
         print(c, end="")
         time.sleep(1. / 100)
 
+def net_check():
+    try:
+        requests.get('1.1.1.1', verify=True)
+    except:
+        print("\n\n\tпохоже что у вас плохой интернет, либо вы используете прокси....")
+        print('\t\tВозобновите интернет и перезайдите в бомбер...\n\n')
+        sys.exit()
+	
 def spam():
+	net_check()
+	
 	slowprint(colored('''
 	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
 	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
@@ -21,19 +30,6 @@ def spam():
 	version 0.8
 	''','yellow'))
 
-def cheak():
-    res = False
-    try:
-        requests.get('https://www.google.com', verify=True)
-        res = False
-    except Exception:
-        res = True
-    if res:
-        print("\n\n\tпохоже что у вас плохой интернет, либо вы используете прокси....")
-        print('\t\tВозобновите интрнет, и перезайдите в бомбер...\n\n')
-        exit()
-
-def bomber():
 	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
 
 	if _phone[0] == '+':
@@ -359,4 +355,3 @@ def bomber():
 			print(('{} круг пройден.').format(iteration))
 		except:
 			break
-spam()
