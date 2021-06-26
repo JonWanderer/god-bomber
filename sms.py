@@ -38,7 +38,7 @@ def spam():
 
 	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
 
-	phone_check(phone)
+	phone_check(_phone)
 	
 	if _phone[0] == '+':
 		_phone = _phone[1:]
