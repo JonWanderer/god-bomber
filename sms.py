@@ -30,6 +30,19 @@ def spam():
 	version 0.8
 	''','yellow'))
 
+def cheak():
+    res = False
+    try:
+        requests.get('https://www.google.com', verify=True)
+        res = False
+    except Exception:
+        res = True
+    if res:
+        print("\n\n\tпохоже что у вас плохой интернет, либо вы используете прокси....")
+        print('\t\tВозобновите интрнет, и перезайдите в бомбер...\n\n')
+        exit()
+
+def bomber():
 	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
 
 	if _phone[0] == '+':
@@ -355,3 +368,4 @@ def spam():
 			print(('{} круг пройден.').format(iteration))
 		except:
 			break
+spam()
