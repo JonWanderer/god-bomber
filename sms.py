@@ -1,4 +1,4 @@
-import time, os, random, requests, sys
+import time, os, random, requests, sys, re
 from termcolor import colored
 
 os.system("clear")
@@ -16,6 +16,12 @@ def net_check():
         print('\t\tВозобновите интернет и перезайдите в бомбер...\n\n')
         sys.exit()
 	
+def phone_check(phone):
+	pat = re.compile(r"(\+?7|8|)9\d{9}")
+	if !(re.fullmatch(pat, phone)):
+		print("\nНеверный номер телефона!")
+		sys.exit()
+	
 def spam():
 	net_check()
 	
@@ -32,6 +38,8 @@ def spam():
 
 	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
 
+	phone_check(phone)
+	
 	if _phone[0] == '+':
 		_phone = _phone[1:]
 	if _phone[0] == '8':
