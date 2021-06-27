@@ -1,2 +1,6 @@
+import git
+
 def up():
-    print("В разработке!")
+    repo = git.Repo("~/.gb")
+    repo.remotes.origin.pull()
+    print("Бомбер обновлен!")
