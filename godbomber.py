@@ -49,6 +49,7 @@ while showMenu:
         showMenu = False
         print(colored("Devs flexagoon, lkqas ",'red'))
         print(colored("links: t.me/ravvs_archive, https://t.me/lkqas  ",'blue'))
+        sys.exit()
     else:
         print(colored("что то пошло не так...",'red'))
         time.sleep(3)
