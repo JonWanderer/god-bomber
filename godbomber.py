@@ -1,15 +1,18 @@
-import os, time, sys,sms, call, update
+import os, time, sys, sms, call, update
 from termcolor import colored
 
-os.system("clear")
 
 def slowprint(s):
-    for c in s + '\n' :
-        print(c, end="")
-        time.sleep(1. / 100)
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(.01)
 
+showMenu = True
+while showMenu:
+    os.system("clear")
 
-slowprint(colored('''
+    slowprint(colored('''
 	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
 	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
 	┃┃╋┗┫┃╋┃┃┃┃┃┃┗┛┗┫┃╋┃┃┏┓┏┓┃┗┛┗┫┗━━┫┗━┛┃
@@ -18,18 +21,15 @@ slowprint(colored('''
 	┗━━━┻━━━┻━━━┻━━━┻━━━┻┛┗┛┗┻━━━┻━━━┻┛┗━┛
 	by @lkqas
 	version 0.9
-	''','yellow'))
 
-showMenu = True
-while showMenu:
+	''','yellow'))
     print(colored('''
-       
 Выберите пункт:
-1.sms-bomb.
-2.call-bomb.
-3.update.
-4.exit/quit
-5.credits.
+1. Sms-bomb
+2. Call-bomb
+3. Update
+4. Quit
+5. Credits
 ''','green'))
 
     cmd = input("# > ")
@@ -46,9 +46,9 @@ while showMenu:
     elif cmd == "4":
         sys.exit()
     elif cmd == "5":
-        showMenu = False
-        print(colored("Devs flexagoon, lkqas ",'red'))
-        print(colored("links: t.me/ravvs_archive, https://t.me/lkqas  ",'blue'))
+        print(colored("Devs: flexagoon, lkqas ",'red'))
+        print(colored("links: https://t.me/ravvs_archive, https://t.me/lkqas",'blue'))
+        time.sleep(10)
     else:
         print(colored("что то пошло не так...",'red'))
         time.sleep(3)
