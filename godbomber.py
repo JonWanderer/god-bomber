@@ -5,21 +5,8 @@ def slowprint(s):
     for c in s + '\n' :
         print(c, end="")
         time.sleep(1. / 100)
-
-def updatefirst():
-    os.system("cd && rm -rf ~/.gb && sed -i '/alias godbomber/d' ~/../usr/etc/bash.bashrc")
-
-def update():
-				a=input("Вы уверены, что хотите обновить? (y/n) ")
-				if a=="y":
-					os.system("curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh && exec bash")
-					exit()
-				else:
-					print("Отменено")
-
-def main():
-    os.system("clear")
-    print(colored('''
+#ИДИТЕ НАХУЙ СО СВОИМ МЕНЮ Я ЕГО ЕБАЛ ОБНОВУ НИКАК НЕ СДЕЛАЕШЬ СУКА БЕСИТ, ДЖАВА СКРИПТ ДАЖЕ ЛУЧШЕ ЧЕМ ЭТО ДЕРЬМО!!!!
+slowprint(colored('''
 	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
 	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
 	┃┃╋┗┫┃╋┃┃┃┃┃┃┗┛┗┫┃╋┃┃┏┓┏┓┃┗┛┗┫┗━━┫┗━┛┃
@@ -52,8 +39,7 @@ while showMenu:
         call.spam()
     elif cmd == "3":
         showMenu = False
-        updatefirst
-        update
+        print("в разработке")
     elif cmd == "4":
         sys.exit()
     elif cmd == "5":
