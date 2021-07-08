@@ -20,18 +20,6 @@ def net_check():
         print(colored("Замечен плохой интернет....",'red'))
         print(colored('Возобновите интернет, и перезайдите в бомбер...','red'))
         sys.exit()
-
-def proxy():
-    print(colored("Использовать прокси? (y/n)",'green'))
-    proxy = input(" >> ")
-    if proxy.lower() == "y":
-        proxies = generate_proxy()
-    else:
-        proxies = None
-
-def generate_proxy():
-    proxy = get("https://gimmeproxy.com/api/getProxy?curl=true&protocol=http&supportsHttps=true").text
-    return {"http": proxy, "https": proxy}
 	
 def phone_check(phone):
 	pat = re.compile(r"(\+?7|8|)9\d{9}")
@@ -42,7 +30,6 @@ def phone_check(phone):
 def spam():
 	os.system("clear")
 	net_check()
-	proxy()
 
 	_phone = input(colored("Введите номер для атаки (79xxxxxxxxx)-->>" ,'green'))
 
