@@ -8,8 +8,19 @@ def slowprint(s):
         print(c, end="")
         time.sleep(1. / 100)
 
+def updatefirst():
+    os.system("cd && rm -rf ~/.gb && sed -i '/alias godbomber/d' ~/../usr/etc/bash.bashrc")
 
-slowprint(colored('''
+def update():
+				a=input("Вы уверены, что хотите обновить? (y/n) ")
+				if a=="y":
+					os.system("curl https://raw.githubusercontent.com/lkqas/god-bomber/master/install.sh | sh && exec bash")
+					exit()
+				else:
+					print("Отменено")
+
+def main():
+    slowprint(colored('''
 	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
 	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
 	┃┃╋┗┫┃╋┃┃┃┃┃┃┗┛┗┫┃╋┃┃┏┓┏┓┃┗┛┗┫┗━━┫┗━┛┃
@@ -42,9 +53,8 @@ while showMenu:
         call.spam()
     elif cmd == "3":
         showMenu = False
-        print(colored('''
-        в разработке
-        ''','green'))
+        updatefirst
+        update
     elif cmd == "4":
         sys.exit()
     elif cmd == "5":
