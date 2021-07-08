@@ -24,16 +24,23 @@
 
 + _Fixed bugs_
 
-
 **UPDATE 0.9**
 
 + _Added proxy_
 
-+ _Added phone cheak_
++ _Added phone check_
 
 + _Refactored some code_
 
 + _Fixed micro bugs with proxy_
+
+**UPDATE 0.10**
+
++ _Added proxy (for real)_
+
++ _Minor refactoring_
+
++ _Better uninstall method_
 
 # Termux installation (Установка в Termux)🔫
 ```
@@ -45,7 +52,7 @@ godbomber
 ```
 # Uninstallation (удаление)
 ```
-rm -rf ~/.gb && sed -i '$ d' ~/../usr/etc/bash.bashrc
+rm -rf ~/.gb && sed -i '/alias godbomber/d' ~/../usr/etc/bash.bashrc
 ```
 
 # Info
