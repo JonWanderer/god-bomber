@@ -1,4 +1,4 @@
-import os, time, sys,sms, call, update
+import os, time, sys,sms, call
 from termcolor import colored
 
 os.system("clear")
@@ -7,6 +7,14 @@ def slowprint(s):
     for c in s + '\n' :
         print(c, end="")
         time.sleep(1. / 100)
+
+def update():
+				a=input("Вы уверены, что хотите обновить? (y/n) ")
+				if a=="y":
+					os.system("cd && rm -rf godbomber && https://github.com/lkqas/god-bomber.git && sh install.sh ")
+					exit()
+				else:
+					print("Отменено")
 
 
 slowprint(colored('''
@@ -28,7 +36,7 @@ while showMenu:
 1.sms-bomb.
 2.call-bomb.
 3.update.
-4.exit/quit
+4.exit.
 5.credits.
 ''','green'))
 
@@ -42,13 +50,13 @@ while showMenu:
         call.spam()
     elif cmd == "3":
         showMenu = False
-        update.up()
+        update
     elif cmd == "4":
         sys.exit()
     elif cmd == "5":
         showMenu = False
         print(colored("Devs flexagoon, lkqas ",'red'))
-        print(colored("links: t.me/ravvs_archive, https://t.me/lkqas  ",'blue'))
+        print(colored("links: https://t.me/lkqas_manager  ",'blue'))
         sys.exit()
     else:
         print(colored("что то пошло не так...",'red'))
