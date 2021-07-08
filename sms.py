@@ -20,7 +20,7 @@ def net_check():
         print(colored("Замечен плохой интернет....",'red'))
         print(colored('Возобновите интернет, и перезайдите в бомбер...','red'))
         sys.exit()
-	
+
 def phone_check(phone):
 	pat = re.compile(r"(\+?7|8|)9\d{9}")
 	if not re.fullmatch(pat, phone):
