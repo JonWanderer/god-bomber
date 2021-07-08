@@ -1,8 +1,6 @@
 import os, time, sys,sms, call
 from termcolor import colored
 
-
-
 def slowprint(s):
     for c in s + '\n' :
         print(c, end="")
@@ -21,7 +19,7 @@ def update():
 
 def main():
     os.system("clear")
-    slowprint(colored('''
+    print(colored('''
 	┏━━━┳━━━┳━━━┳━━┓┏━━━┳━┓┏━┳━━┓┏━━━┳━━━┓
 	┃┏━┓┃┏━┓┣┓┏┓┃┏┓┃┃┏━┓┃┃┗┛┃┃┏┓┃┃┏━━┫┏━┓┃
 	┃┃╋┗┫┃╋┃┃┃┃┃┃┗┛┗┫┃╋┃┃┏┓┏┓┃┗┛┗┫┗━━┫┗━┛┃
@@ -37,11 +35,11 @@ while showMenu:
     print(colored('''
        
 Выберите пункт:
-1.sms-bomb.
-2.call-bomb.
-3.update.
-4.exit.
-5.credits.
+1.sms-bomb
+2.call-bomb
+3.update
+4.exit
+5.credits
 ''','green'))
 
     cmd = input("# > ")
