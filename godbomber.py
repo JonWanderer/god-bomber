@@ -1,6 +1,8 @@
 import os, time, sys,sms, call
 from termcolor import colored
 
+os.system("clear")
+
 def slowprint(s):
     for c in s + '\n' :
         print(c, end="")
